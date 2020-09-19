@@ -25,19 +25,19 @@ private static final long serialVersionUID = 2652327633296064143L;
 	private String customerPhone;
 
 	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-	@JoinColumn(name = "shippingAddressId")
+	@JoinColumn(unique = true)
 	private ShippingAddress shippingAddress;
 
 	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-	@JoinColumn(name = "billingAddressId")
+	@JoinColumn(unique = true)
 	private BillingAddress billingAddress;
 
 	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-	@JoinColumn(name = "userId")
+	@JoinColumn(unique = true)
 	private User user;
 
 	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-	@JoinColumn(name = "cartId")
+	@JoinColumn(unique = true)
 	private Cart cart;
 
 	public int getId() {

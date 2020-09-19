@@ -31,9 +31,9 @@ public class ApplicationConfig {
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
                         // change to your own RDS_IP
                         // change the username and password
-		dataSource.setUrl("jdbc:mysql://database-1.cxgdpyyy9dkz.us-east-2.rds.amazonaws.com:3306/ecommerce?serverTimezone=UTC");
+		dataSource.setUrl("jdbc:mysql://ecommerce.cxgdpyyy9dkz.us-east-2.rds.amazonaws.com:3306/job_sql");
 		dataSource.setUsername("admin");
-		dataSource.setPassword("88888888");
+		dataSource.setPassword("passpass");
 
 		return dataSource;
 	}
