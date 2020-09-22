@@ -4,8 +4,10 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
+import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -66,4 +68,19 @@ public class CustomerDao {
 		return null;
 
 	}
+
+
+	public Customer getCustomerByEmail(String userName) {
+		User user = null;
+		try (Session session = sessionFactory.openSession()) {
+			Criteria criteria = session.createCriteria(User.class);
+			user = (User) criteria.add(Restrictions.eq("emailId", userName)).uniqueResult();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		if (user != null)
+			return user.getCustomer();
+		return null;
+	}
+
 }

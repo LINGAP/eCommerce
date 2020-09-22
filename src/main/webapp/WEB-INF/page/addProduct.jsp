@@ -27,12 +27,6 @@
 					<div class="col-sm-12">
 						<div class="row">
 							<div class="col-sm-6 form-group">
-								<form:label path="id">Product Id</form:label>
-								<form:input type="text"
-									placeholder="Enter ProductId" class="form-control"
-									path="id" disabled="true"></form:input>
-							</div>
-							<div class="col-sm-6 form-group">
 								<form:label path="productName">Product Name</form:label>
 								 <form:input type="text"
 									placeholder="Enter Product Name" class="form-control"
@@ -72,10 +66,6 @@
 									path="unitStock"></form:input>
 							</div>
 						</div>
-					 	<div class="form-group">
-						<form:label path="productImage">Product Image</form:label>
-							<form:input type="file" path="productImage"/>
-						</div>  
 						<div class="form-actions">
 							<button type="submit" class="btn btn-lg btn-info">Submit</button>
 						</div>

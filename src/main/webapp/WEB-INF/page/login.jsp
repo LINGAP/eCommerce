@@ -10,15 +10,6 @@
     <link rel="stylesheet" href="/resource/bootstrap/css/bootstrap.min.css">
     <script src="/resource/js/jquery.js"></script>
     <script src="/resource/bootstrap/js/bootstrap.min.js"></script>
-    <style type="text/css">
-        @media ( min-width: 1200px) .container {
-            width: 1300px;
-        }
-
-        @media ( min-width: 992px) .col-md-4 {
-            margin-left: 330px;
-        }
-    </style>
 </head>
 <body>
 <%@ include file="navbar.jsp" %>

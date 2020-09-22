@@ -23,11 +23,6 @@
 			<table class="table table-bordered" id="prod">
 				<tbody>
 					<tr>
-						<td>Prodcut Image</td>
-						<td><img src="/products/${product.id}.jpg"
-							width="30%" height="150px" alt="${product.productName}" /></td>
-					</tr>
-					<tr>
 						<td>ID</td>
 						<td>${product.id}</td>
 					</tr>
