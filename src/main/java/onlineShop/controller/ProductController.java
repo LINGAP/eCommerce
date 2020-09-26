@@ -68,8 +68,6 @@ public class ProductController {
 	
 	@RequestMapping(value = "/admin/delete/{productId}")
 	public String deleteProduct(@PathVariable(value = "productId") int productId) {
-		// for MAC : Path path = Paths.get("/Users/xxx/products/" + productId + ".jpg");
-		// For windows
 		Path path = Paths.get("/Users/lingma/products/" + productId + ".jpg");
 
 		if (Files.exists(path)) {

@@ -29,8 +29,6 @@ public class ApplicationConfig {
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-                        // change to your own RDS_IP
-                        // change the username and password
 		dataSource.setUrl("jdbc:mysql://ecommerce.cxgdpyyy9dkz.us-east-2.rds.amazonaws.com:3306/job_sql");
 		dataSource.setUsername("admin");
 		dataSource.setPassword("passpass");

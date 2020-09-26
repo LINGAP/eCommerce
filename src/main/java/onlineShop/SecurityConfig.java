@@ -23,7 +23,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 				
 			.and()
 			.authorizeRequests()
-			.antMatchers("/cart/**").hasAuthority("ROLE_USER")//why diff from the rest ?
+			.antMatchers("/cart/**").hasAuthority("ROLE_USER")
 			.antMatchers("/get*/**").hasAnyAuthority("ROLE_USER", "ROLE_ADMIN")
 			.antMatchers("/admin*/**").hasAuthority("ROLE_ADMIN")
 			.anyRequest().permitAll()
